@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>TIENDA DE ROPA</title>
+</head>
+<body>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">SUDADERA 1</p>
+                    <span class="precio">$ 130</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <p class="descripcion" id>SUDADERA 2 </p>
+                    <span class="precio">$ 180</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/3.jpg" alt="">
+                    </div>
+                    <p class="descripcion">SUDADERA 3
+                    </p>
+                    <span class="precio">$ 360</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <p class="descripcion">SUDADERA 4</p>
+                    <span class="precio">$ 180</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <p class="descripcion">SUDADERA 5</p>
+                    <span class="precio">$ 130</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/6.jpg" alt="">
+                    </div>
+                    <p class="descripcion">SUDADERA 6</p>
+                    <span class="precio">$ 200</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/7.jpg" alt="">
+                    </div>
+                    <p class="descripcion">SUDADERA 7</p>
+                    <span class="precio">$ 250</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/8.jpg" alt="">
+                    </div>
+                    <p class="descripcion">SUDADERA 8</p>
+                    <span class="precio">$ 180</span>
+                </div>
+                
+            </div> 
+        </div>
+        <!-- ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">NIKE MODEL 1</h2>
+                <p id="descripcion">Material: Algodon</p>
+
+                <span class="precio" id="precio">$ 130</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">SIZE</label>
+                        <select name="" id="">
+                            <option value="">40</option>
+                            <option value="">42</option>
+                            <option value="">44</option>
+                            <option value="">46</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
